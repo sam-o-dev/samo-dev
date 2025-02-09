@@ -4,7 +4,7 @@ import { ref, computed } from 'vue';
 export const useUiStore = defineStore('ui', () => {
 	const isSidebarOpen = ref(false);
 
-	const sidebarClass = computed(() => (isSidebarOpen.value ? 'w-20' : 'w-80'));
+	const sidebarClass = computed(() => (isSidebarOpen.value ? 'w-16' : 'w-80'));
 
 	function toggleSidebar() {
 		isSidebarOpen.value = !isSidebarOpen.value;
